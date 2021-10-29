@@ -1,11 +1,14 @@
-import com.sun.tools.javac.Main;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MarketAppTest {
+
+    Logger log = Logger.getLogger(MarketApp.class.getName());
 
     @Test
     void priceBasketSpecialExample() throws Exception {
